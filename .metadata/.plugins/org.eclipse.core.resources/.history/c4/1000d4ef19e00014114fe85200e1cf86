@@ -1,0 +1,78 @@
+package OrangeHRM;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+
+public class AddEmployeeActions  extends Constants{
+	 
+	public void clickPim() throws IOException
+	 {
+		 driver.findElement(By.xpath(pr.readProperties("pim"))).click();
+		 
+	 }
+	
+	public void clickAddEmployee() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("addemployee"))).click();
+		 
+	 }
+	
+	public void enterFirstName() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("fname"))).sendKeys("sai");
+		 
+	 }
+	public void enterMiddleName() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("mname"))).sendKeys("krishna");
+		 
+	 }
+	public void enterLastName() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("lname"))).sendKeys("g");
+		 
+	 }
+	public void enterempId() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("empid"))).sendKeys("100");
+		 
+	 }
+	public void checkLoginDetails() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("createLogin"))).click();
+		 
+	 }
+	public void enterUsername() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("uname"))).sendKeys("sai123");
+		 
+	 }
+	public void enterPassword() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("upassword"))).sendKeys("krishna123");
+		 
+	 }
+	public void confirmPassword() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("cpassword"))).sendKeys("krishna123");
+		 
+	 }
+	public void enterStatus() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("status"))).sendKeys("Enabled");
+		 
+	 }
+	
+	public void clickSave() throws IOException
+	 {
+		 driver.findElement(By.id(pr.readProperties("save"))).click();
+		 
+	 }
+	
+
+	
+	
+	
+
+}

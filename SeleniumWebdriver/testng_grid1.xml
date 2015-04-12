@@ -1,0 +1,15 @@
+<suite name="Grid Demo Test suite"  parallel="tests" >
+  <test name="Links on Firefox" >
+   <parameter name="browser" value="firefox"/>
+    <classes>
+       <class name="day25.LinksonGrid" />
+    </classes>
+  </test>
+ 
+ <test name="Links on Chrome" >
+  <parameter name="browser" value="chrome"/>
+    <classes>
+       <class name="day25.LinksonGrid" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,36 @@
+package day26;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataqdrivenTestingOnGrid {
+	
+	/*@DataProvider
+	public Object[][] getData()
+	{
+		FileInputStream f=new FileInputStream("C:\\Users\\sai\\Desktop\\Book1.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(f);
+		XSSFSheet ws=wb.getSheet("Sheet1");
+		int r=ws.getLastRowNum();
+		int c=ws.getDefaultColumnWidth();
+		System.out.println(r+"  "+c);
+		Object[][] data=new Object[][];
+	}*/
+	
+	@Test
+	public void loginTest() throws IOException
+	{
+		FileInputStream f=new FileInputStream("C:\\Users\\sai\\Desktop\\Book1.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(f);
+		XSSFSheet ws=wb.getSheet("Sheet1");
+		int r=ws.getLastRowNum();
+		int c=ws.getDefaultColumnWidth();
+		System.out.println(r+"  "+c);
+	}
+
+}

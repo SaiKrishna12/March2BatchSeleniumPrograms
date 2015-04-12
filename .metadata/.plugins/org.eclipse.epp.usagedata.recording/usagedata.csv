@@ -1,0 +1,15 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012005,"org.eclipse.wst.xsl.exslt.ui",1428742088501
+stopped,bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.200.v201103081922,"org.eclipse.wst.xsl.jaxp.debug.ui",1428742088504
+stopped,bundle,org.eclipse.wst.xsl.ui,1.1.200.v201103082057,"org.eclipse.wst.xsl.ui",1428742088504
+stopped,bundle,org.eclipse.wst.xml.xpath.ui,1.1.100.v201105030025,"org.eclipse.wst.xml.xpath.ui",1428742088507
+stopped,bundle,org.eclipse.wst.xsl.debug.ui,1.0.200.v201101281837,"org.eclipse.wst.xsl.debug.ui",1428742088510
+stopped,bundle,org.eclipse.wst.xsl.jaxp.launching,1.0.200.v201103081922,"org.eclipse.wst.xsl.jaxp.launching",1428742088512
+stopped,bundle,org.eclipse.wst.xsl.launching,1.0.200.v201103081922,"org.eclipse.wst.xsl.launching",1428742088515
+stopped,bundle,org.eclipse.wst.xsl.core,1.1.100.v201102270516,"org.eclipse.wst.xsl.core",1428742088518
+stopped,bundle,org.eclipse.wst.xml.xpath.core,1.2.1.v201109010357,"org.eclipse.wst.xml.xpath.core",1428742088521
+stopped,bundle,org.eclipse.datatools.enablement.oda.xml.ui,1.2.3.v201112071047,"org.eclipse.datatools.enablement.oda.xml.ui",1428742088524
+stopped,bundle,org.eclipse.datatools.enablement.oda.xml,1.2.3.v201112061438,"org.eclipse.datatools.enablement.oda.xml",1428742088526
+stopped,bundle,org.eclipse.jst.jsf.apache.trinidad.tagsupport,1.1.200.v201104061711,"org.eclipse.jst.jsf.apache.trinidad.tagsupport",1428742088529
+stopped,bundle,org.eclipse.jst.jsf.facelet.ui,1.0.1.v201104032306,"org.eclipse.jst.jsf.facelet.ui",1428742088532
+stopped,bundle,org.eclipse.jst.jsf.facelet.core,1.0.100.v201104191527,"org.eclipse.jst.jsf.facelet.core",1428742088535

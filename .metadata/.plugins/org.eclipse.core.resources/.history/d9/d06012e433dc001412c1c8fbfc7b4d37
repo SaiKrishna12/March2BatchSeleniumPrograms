@@ -1,0 +1,30 @@
+package day25;
+
+public class DoubleDimensionalArray {
+
+	
+	public static void main(String[] args) {
+		String[][] str=new String[2][3];
+		str[0][0]="selenium";
+		str[0][1]="qtp";
+		str[0][2]="lr";
+		
+		str[1][0]="Jmeter";
+		str[1][1]="Codedui";
+		str[1][2]="silktest";
+		
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				System.out.print(str[i][j]+"   ");
+			}
+			System.out.println();
+		}
+			
+		
+		
+
+	}
+
+}

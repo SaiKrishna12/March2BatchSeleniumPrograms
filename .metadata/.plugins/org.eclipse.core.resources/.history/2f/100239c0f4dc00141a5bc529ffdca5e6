@@ -1,0 +1,102 @@
+package day26;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataqdrivenTestingOnGrid {
+	
+	/*@DataProvider
+	public Object[][] getData() throws IOException
+	{
+		FileInputStream f=new FileInputStream("C:\\Users\\sai\\Desktop\\Book1.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(f);
+		XSSFSheet ws=wb.getSheet("Sheet1");
+		int rCount=ws.getLastRowNum();
+		Iterator<Row> row=ws.iterator();
+		Row r=row.next();
+		System.out.println(rCount);
+		Iterator<Cell> cell=r.iterator();
+		int count=0;
+		while(cell.hasNext())
+		{
+			Cell c=cell.next();
+			count++;
+		}
+		System.out.println(count);
+		
+		
+		int c=ws.getDefaultColumnWidth();
+		System.out.println(r+"  "+c);
+		Object[][] data=new Object[rCount][count];
+		row=ws.iterator();
+		for(int i=0;i<=rCount;i++)
+		{
+			r=row.next();
+			for(int j=0;j<=count;j++)
+			{
+				data[i][j]=r.getCell(j).getStringCellValue();
+			}
+		}
+		
+		for(int i=0;i<=rCount;i++)
+		{
+			
+			for(int j=0;j<=count;j++)
+			{
+				System.out.print(data[i][j]+"  ");
+			}
+			System.out.println();
+		}
+		
+		
+		
+	}*/
+	
+	@Test
+	public void loginTest() throws IOException
+	{
+		FileInputStream f=new FileInputStream("C:\\Users\\sai\\Desktop\\Book1.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(f);
+		XSSFSheet ws=wb.getSheet("Sheet1");
+		int rCount=ws.getLastRowNum()+1;
+		Iterator<Row> row=ws.iterator();
+		Row r=row.next();
+		int cCount=r.getLastCellNum()+1;
+		
+		System.out.println(rCount);
+		System.out.println(cCount);
+		
+		Object[][] data=new Object[rCount][cCount];
+		row=ws.iterator();
+		for(int i=0;i<rCount;i++)
+		{
+			
+			for(int j=0;j<cCount;j++)
+			{
+				data[i][j]=r.getCell(j).getStringCellValue();
+			}
+			r=row.next();
+		}
+		
+		for(int i=0;i<=rCount;i++)
+		{
+			
+			for(int j=0;j<=cCount;j++)
+			{
+				System.out.print(data[i][j]+"  ");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+
+}

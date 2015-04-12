@@ -1,0 +1,45 @@
+package OrangeHRM;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.testng.annotations.Test;
+
+public class Addemployee  extends Constants{
+	
+	AddEmployeeActions keys=new AddEmployeeActions();
+	Method[] methods=keys.getClass().getMethods();
+	@Test
+	public void addEmployeeTest() throws IOException
+	{
+		XSSFSheet ws=eo.excelRead(path1, "Sheet2");
+		Iterator<Row> row=ws.iterator();
+		row.next();
+		
+		
+		while(row.hasNext())
+		{
+			Row r=row.next();
+			String action=r.getCell(3).getStringCellValue();
+			executeActions(action);
+		}
+		
+		
+	}
+	public void executeActions(String action)
+	{
+		for(int i=0;i<methods.length;i++)
+		{
+			if(methods[i].getName().equals(action))
+			{
+				methods[i].invoke(keys);
+			}
+		}
+	}
+	
+	
+
+}

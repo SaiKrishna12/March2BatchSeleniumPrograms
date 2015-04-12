@@ -1,0 +1,16 @@
+package OrangeHRM;
+
+import java.io.FileInputStream;
+
+import com.qedge.utility.ExcelOperations;
+import com.qedge.utility.PropertiesRead;
+
+public class Constants {
+	
+	ExcelOperations eo=new ExcelOperations();
+	String path1="C:\\Users\\sai\\Desktop\\ActionsKeywords.xlsx";
+	 
+	PropertiesRead pr=new PropertiesRead();
+	
+
+}

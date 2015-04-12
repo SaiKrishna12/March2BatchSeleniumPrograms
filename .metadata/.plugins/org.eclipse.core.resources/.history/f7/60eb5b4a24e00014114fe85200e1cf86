@@ -1,0 +1,20 @@
+package OrangeHRM;
+
+import java.io.FileInputStream;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.qedge.utility.ExcelOperations;
+import com.qedge.utility.PropertiesRead;
+import com.qedge.utility.Screenshots;
+
+public class Constants {
+	 static FirefoxDriver driver=null;
+	ExcelOperations eo=new ExcelOperations();
+	String path1="C:\\Users\\sai\\Desktop\\LoginKeywords.xlsx";
+	 
+	PropertiesRead pr=new PropertiesRead();
+	Screenshots sc=new Screenshots();
+	ExecuteActions ea=new ExecuteActions();
+
+}

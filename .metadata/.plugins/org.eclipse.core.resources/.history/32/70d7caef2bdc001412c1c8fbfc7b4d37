@@ -1,0 +1,15 @@
+<suite name="Grid Demo Test suite"  >
+  <test name="Dropdown on grid" >
+   <parameter name="browser" value="firefox"/>
+    <classes>
+       <class name="day25.DropdownonGrid" />
+    </classes>
+  </test>
+ 
+ <test name="Dropdown on grid" >
+  <parameter name="browser" value="chrome"/>
+    <classes>
+       <class name="day25.DropdownonGrid" />
+    </classes>
+  </test>
+</suite>

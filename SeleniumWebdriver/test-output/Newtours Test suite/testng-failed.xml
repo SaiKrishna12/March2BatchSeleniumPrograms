@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Newtours Test suite]">
+  <test name="Login on newtours(failed)">
+    <classes>
+      <class name="day24.Login">
+        <methods>
+          <include name="closeApp"/>
+          <include name="loginTest"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Login -->
+      <class name="day24.Links">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Links -->
+      <class name="day24.Registration">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Registration -->
+    </classes>
+  </test> <!-- Login on newtours(failed) -->
+  <test name="Links on newtours(failed)">
+    <classes>
+      <class name="day24.Login">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Login -->
+      <class name="day24.Links">
+        <methods>
+          <include name="linkTest"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Links -->
+      <class name="day24.Registration">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Registration -->
+    </classes>
+  </test> <!-- Links on newtours(failed) -->
+  <test name="Registration on newtours(failed)">
+    <classes>
+      <class name="day24.Login">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Login -->
+      <class name="day24.Links">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Links -->
+      <class name="day24.Registration">
+        <methods>
+          <include name="closeApp"/>
+          <include name="regTest"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- day24.Registration -->
+    </classes>
+  </test> <!-- Registration on newtours(failed) -->
+</suite> <!-- Failed suite [Newtours Test suite] -->
